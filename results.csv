@@ -1,0 +1,124 @@
+Model,Precision,Latency (ms),Throughput (tokens/sec),Memory Usage (MB),Perplexity,ROUGE-1,ROUGE-2,ROUGE-L,BLEU Score,CHRF Score,Generated Output,Unique n-grams,Entropy,Repeated n-grams (%),Coherence (Cosine Similarity),FP16 Model Size (MB),INT8 Model Size (MB),INT4 Model Size (MB),Compression Rate INT8,Compression Rate INT4
+DeepSeek-R1-Distill-Llama-8B\INT4_compressed_weights,FP16/INT4/INT8 (based on model config),16303.313732147217,16.07035258625876,Not Available (OVModel handles memory differently),N/A (OVModel does not provide logits),0.042553191489361694,0.028776978417266185,0.042553191489361694,0.02259281439299522,0.053267425858779555,"2 + 2 = 4
+3 + 3 = 6
+5 + 5 = 10
+8 + 8 = 16
+And so on...
+
+Wait, I think the pattern here is that each number is being added to itself. So, n + n = 2n.
+
+But then, looking at the results: 4, 6, 10, 16...
+
+Wait, that's not just 2n. 4 is 2×2, 6 is 2×3, 10 is 2×5, 16 is 2×8.
+
+Hmm, so the numbers being added are 2, 3, 5, 8...
+
+Wait, that's the sequence of prime numbers! 2, 3, 5, 7, 11, etc. But in this case, it's 2, 3, 5, 8. Wait, 8 isn't prime. Hmm.
+
+Wait, let me check the original problem again.
+
+It says: 2 + 2 = 4, 3 + 3 = 6, 5 + 5 = 10, 8 + 8 = 16, and so on.
+
+So the numbers being added are ",0.8445945945945946,5.9268398115987475,0.0,0,15316.508195877075,7663.687526702881,5102.710048675537,1.998582032801987,3.0016418824057305
+
+
+
+DeepSeek-R1-Distill-Llama-8B\INT8_compressed_weights,FP16/INT4/INT8 (based on model config),24776.387214660645,10.574584491679634,Not Available (OVModel handles memory differently),N/A (OVModel does not provide logits),0.039999999999999994,0.027027027027027025,0.039999999999999994,0.018336921964169417,0.04785928772864742,"2 + 2 = 4
+3 + 3 = 6
+4 + 4 = 8
+5 + 5 = 10
+6 + 6 = 12
+7 + 7 = 14
+8 + 8 = 16
+9 + 9 = 18
+10 + 10 = 20
+
+So, we have these equations here, each one adding two identical numbers together. It starts at 2 and goes up to 10. Each equation results in an even number. Hmm, interesting.
+
+Let me write them down again to see the pattern:
+
+2 + 2 = 4  
+3 + 3 = 6  
+4 + 4 = 8  
+5 + 5 = 10  
+6 + 6 = 12  
+7 + 7 = 14  
+8 + 8 = 16  
+9 + 9 = 18  
+10 + 10 = 20
+
+Yeah, so each time, the number being added is n, and the result is 2n. Because n + n is 2n. So each of these equations is just doubling the number on the left side.
+
+But why does this matter? Well, maybe it's just a simple pattern. But let's think about",0.7362637362637363,5.7837147432221325,0.0,0,15316.508195877075,7663.687526702881,5102.710048675537,1.998582032801987,3.0016418824057305
+
+
+DeepSeek-R1-Distill-Llama-8B\FP16,FP16/INT4/INT8 (based on model config),54794.320583343506,4.78151744944974,Not Available (OVModel handles memory differently),N/A (OVModel does not provide logits),0.039999999999999994,0.027027027027027025,0.039999999999999994,0.018752506091921244,0.04731549592115882,"2 + 2 = 4
+3 + 3 = 6
+5 + 5 = 10
+7 + 7 = 14
+9 + 9 = 18
+11 + 11 = 22
+13 + 13 = 26
+15 + 15 = 30
+
+So, the sum of two odd numbers is even. Because adding two odd numbers: 2k+1 + 2m+1 = 2(k + m + 1), which is even.
+
+So, all these equations result in even numbers. So, if I have two odd numbers, their sum is even.
+
+But then, if I have four odd numbers: 2 + 2 + 2 + 2 = 8 (even), 3 + 3 + 3 + 3 = 12 (even), etc. So, sum of even number of odd numbers is even.
+
+What if I have an odd number of odd numbers? For example, 3 + 3 + 3 = 9 (odd), 5 + 5 + 5 = 15 (odd). So, sum of odd number of odd numbers is odd.
+
+Therefore, in general, the sum of an even number of odd numbers is even, and the",0.6910112359550562,5.408426916217438,0.0,0,15316.508195877075,7663.687526702881,5102.710048675537,1.998582032801987,3.0016418824057305
+
+
+DeepSeek-R1-Distill-Qwen-7B\INT4_compressed_weights,FP16/INT4/INT8 (based on model config),15745.102167129517,16.640095263844522,Not Available (OVModel handles memory differently),N/A (OVModel does not provide logits),0.020618556701030927,0.010416666666666666,0.020618556701030927,0.012262638786647509,0.020967703810535643,"2 + 2 = 22?
+
+Wait, that doesn't seem right. Maybe I'm missing something here. So, if I have two plus two, how does that equal 22? That doesn't make sense in regular math. Maybe there's a different way to look at it. Perhaps it's about the number of letters in the spelled-out numbers. Let me think: ""two"" has three letters, and ""two"" again has three letters. So, if I add them together, 3 + 3, that equals 6, not 22. Hmm, that doesn't help either.
+
+Wait, maybe it's something else. Like, if I write it down, does it look like 22? Let me see: 2 + 2... If I write it as 22, that's two digits, both 2s. But how does adding two 2s result in 22? That doesn't add up in any standard numerical system.
+
+Is there a possibility that this is a riddle or a play on words? Maybe not in regular math terms. Maybe it's about something else, like time or another concept. But I'm not sure. I'll have to think about this more carefully.
+
+Alternatively, could it",0.9175824175824175,6.650578879383616,0.0,0,14525.636125564575,7268.374538421631,4899.414623260498,1.998471054123595,2.9647697209790236
+
+
+DeepSeek-R1-Distill-Qwen-7B\INT8_compressed_weights,FP16/INT4/INT8 (based on model config),22361.77158355713,11.716424122346892,Not Available (OVModel handles memory differently),N/A (OVModel does not provide logits),0.03773584905660378,0.025477707006369425,0.03773584905660378,0.014314385561947742,0.029677755132614354,"2 + 2 = 22? What?
+
+Wait, that doesn't make sense. 2 plus 2 is 4, right? So, 2 + 2 = 22 is wrong. Maybe it's a typo or something. Or maybe I'm misunderstanding the question.
+
+Let me think differently. Perhaps the numbers are in a different base. For example, if 2 + 2 in base 10 is 4, but maybe in another base, it's 22. Hmm, let's explore that.
+
+In base b, the number 22 would represent 2*b + 2. So, if 2 + 2 equals 22 in some base, then:
+
+2 + 2 = 22 (base b)
+
+Which is 4 = 2*b + 2
+
+Solving for b:
+
+4 = 2b + 2  
+4 - 2 = 2b  
+2 = 2b  
+b = 1
+
+Wait, base 1? That doesn't make sense because base 1 isn't standard. Usually, bases start from base 2.
+
+Alternatively, maybe the numbers are in a different numbering system, like Roman numerals. But 2 + 2 is IV, which is",0.8121212121212121,5.976403541513715,0.0,0,14525.636125564575,7268.374538421631,4899.414623260498,1.998471054123595,2.9647697209790236
+
+
+DeepSeek-R1-Distill-Qwen-7B\FP16,FP16/INT4/INT8 (based on model config),46840.22116661072,5.593483409654829,Not Available (OVModel handles memory differently),N/A (OVModel does not provide logits),0.0335195530726257,0.01129943502824859,0.0335195530726257,0.013972534071438591,0.023909555457438756,"2 + 2 = 22?
+
+Wait, that can't be right. 2 + 2 equals 4, not 22. Maybe the plus sign is a typo for something else.
+
+Wait, what if the plus sign is actually a multiplication sign? Then 2 times 2 equals 4, which still isn't 22. Hmm.
+
+Alternatively, maybe it's using a different number base. Let's see, if we're in base 3, then 2 + 2 equals 11, which is 4 in decimal. Still not 22.
+
+Wait, maybe it's a time problem. Like 2 hours and 2 minutes equals 22 minutes? That doesn't make sense either.
+
+Alternatively, maybe it's a date problem. Like February 2nd plus 2 days equals February 22nd? No, that's not how addition works.
+
+Wait, maybe it's using concatenation instead of addition. So 2 and 2 together make 22. But that's not standard addition.
+
+Alternatively, maybe the plus sign is a typo for something else, like a letter. For example, '2' could stand for 'B' in the alphabet, and '22' could stand for 'V'.",0.8106508875739645,6.177501215868408,0.0,0,14525.636125564575,7268.374538421631,4899.414623260498,1.998471054123595,2.9647697209790236
