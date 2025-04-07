@@ -33,7 +33,7 @@ The notebook implements a pipeline that covers the following stages:
         * Unique n-grams, Entropy, Repeated n-grams
         * Coherence (Cosine Similarity)
 * **Model Configuration**:
-    * LLM models and configurations are loaded from an external Python file (`llm_config_copy.py`).
+    * LLM models and configurations are loaded from an external Python file (`llm_config.py`).
 * **Selective Processing**:
     * Allows users to skip specific models during compression and evaluation, providing flexibility for iterative testing.
 
@@ -48,8 +48,8 @@ Ensure you have Python installed. It's recommended to use a virtual environment.
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/GodreignElgin/llm-research
-    cd llm-research
+    git clone https://github.com/GodreignElgin/llm-comparision
+    cd llm-comparision
     ```
 
 2.  **Install the required packages:**
@@ -98,7 +98,7 @@ Ensure you have Python installed. It's recommended to use a virtual environment.
                 shutil.copy(config_shared_path, config_dst_path)
         else:
             r = requests.get(
-                url="[https://github.com/GodreignElgin/llm-research/llm_config.py](https://github.com/GodreignElgin/llm-research/llm_config.py)"
+                url="[https://github.com/GodreignElgin/llm-comparision/llm_config.py](https://github.com/GodreignElgin/llm-comparision/llm_config.py)"
             )
             with open("llm_config.py", "w", encoding="utf-8") as f:
                 f.write(r.text)
@@ -108,7 +108,7 @@ Ensure you have Python installed. It's recommended to use a virtual environment.
             shutil.copy(config_shared_path, config_dst_path)
         else:
             r = requests.get(
-                url="[https://github.com/GodreignElgin/llm-research/llm_config.py](https://github.com/GodreignElgin/llm-research/llm_config.py)"
+                url="[https://github.com/GodreignElgin/llm-comparision/llm_config.py](https://github.com/GodreignElgin/llm-comparision/llm_config.py)"
             )
             with open("llm_config.py", "w", encoding="utf-8") as f:
                 f.write(r.text)
@@ -164,14 +164,14 @@ The pipeline employs various metrics to evaluate the performance of the compress
     * Cosine similarity can be used to measure the similarity between the embeddings of the input text and the generated text, providing a measure of coherence.
 
 ## 📂 File Structure
-|── llm_config.py  # Model configurations
+|── llm_config.py  # Model configurations 
 ├── <notebook_name>.ipynb # Jupyter Notebook
 ├── ...
 
 ## 📝 Notes
 
 * Ensure sufficient RAM (16-32 GB) for evaluating memory-intensive models.
-* Model configurations are loaded from `llm_config_copy.py`, which should be present or downloadable.
+* Model configurations are loaded from `llm_config.py`, which should be present or downloadable.
 * The pipeline supports skipping models for compression/evaluation using interactive widgets.
 * Evaluation results are stored in CSV files for analysis.
 
@@ -188,12 +188,16 @@ Contributions to this project are welcome. Please feel free to submit issues or 
 
 ## 📄 License
 
-\[License information]
+This project is licensed under the Apache License 2.0.
 
-## Acknowledgements
+## 🙏 Acknowledgements
 
-\[Acknowledgements, if any]
+I would like to acknowledge the following individuals for their contributions to this project:
 
+* \Aditya-2505
+* \Gowthaam-J
+
+This project utilizes code from the \[Name of the original GitHub repository].
 ## References
 
 * ROUGE: \[https://www.aclweb.org/anthology/W04-1013]
