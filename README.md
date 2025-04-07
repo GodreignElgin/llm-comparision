@@ -194,10 +194,10 @@ This project is licensed under the Apache License 2.0.
 
 I would like to acknowledge the following individuals for their contributions to this project:
 
-* \Aditya-2505
-* \Gowthaam-J
+* [\Aditya-2505](https://github.com/Aditya-2505)
+* [\Gowthaam-J](https://github.com/gowthaam-j)
 
-This project utilizes code from the \[Name of the original GitHub repository].
+This project utilizes code from the \\[Openvino Notebooks\]](https://github.com/openvinotoolkit/openvino_notebooks).
 ## References
 
 * ROUGE: \[https://www.aclweb.org/anthology/W04-1013]
