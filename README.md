@@ -2,9 +2,9 @@
 
 This repository contains a Jupyter Notebook that automates the process of compressing Large Language Models (LLMs) and evaluating their performance. The pipeline streamlines the application of quantization techniques and provides a comprehensive evaluation framework.
 
-![image](https://github.com/user-attachments/assets/6470e947-2d75-4892-88f4-28d92468f787)
-
 * [Comparision Dashboard](https://godreignelgin.github.io/llm-comparision/).
+
+![image](https://github.com/user-attachments/assets/6470e947-2d75-4892-88f4-28d92468f787)
 
 ## 🚀 Overview
 
