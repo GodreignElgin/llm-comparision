@@ -2,6 +2,10 @@
 
 This repository contains a Jupyter Notebook that automates the process of compressing Large Language Models (LLMs) and evaluating their performance. The pipeline streamlines the application of quantization techniques and provides a comprehensive evaluation framework.
 
+![image](https://github.com/user-attachments/assets/6470e947-2d75-4892-88f4-28d92468f787)
+
+* [Comparision Dashboard]([https://github.com/Aditya-2505](https://godreignelgin.github.io/llm-comparision/))
+
 ## 🚀 Overview
 
 The notebook implements a pipeline that covers the following stages:
@@ -194,8 +198,12 @@ This project is licensed under the Apache License 2.0.
 
 I would like to acknowledge the following individuals for their contributions to this project:
 
-* [\Aditya-2505](https://github.com/Aditya-2505)
-* [\Gowthaam-J](https://github.com/gowthaam-j)
+- 🧠 [LangChain](https://github.com/hwchase17/langchain)
+- 🚀 [OpenVINO](https://www.openvino.ai/)
+- 💬 [Gradio](https://www.gradio.app/)
+- 🤗 [Hugging Face](https://huggingface.co/)
+- ❤️ Contributor:[\Aditya-2505](https://github.com/Aditya-2505)
+- ❤️ Contributor:[\Gowthaam-J](https://github.com/gowthaam-j)
 
 This project utilizes code from the \\[Openvino Notebooks\]](https://github.com/openvinotoolkit/openvino_notebooks).
 ## References
