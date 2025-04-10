@@ -4,6 +4,8 @@ This repository contains a Jupyter Notebook that automates the process of compre
 
 * [Comparision Dashboard](https://godreignelgin.github.io/llm-comparision/).
 
+![Screenshot 2025-04-10 190932](https://github.com/user-attachments/assets/978329c4-b241-4c21-9b73-7616c4b9c983)
+
 ![image](https://github.com/user-attachments/assets/6470e947-2d75-4892-88f4-28d92468f787)
 
 ## 🚀 Overview
