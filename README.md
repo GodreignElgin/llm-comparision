@@ -4,7 +4,7 @@ This repository contains a Jupyter Notebook that automates the process of compre
 
 ![image](https://github.com/user-attachments/assets/6470e947-2d75-4892-88f4-28d92468f787)
 
-* [Comparision Dashboard]([https://github.com/Aditya-2505](https://godreignelgin.github.io/llm-comparision/))
+* [Comparision Dashboard](https://godreignelgin.github.io/llm-comparision/).
 
 ## 🚀 Overview
 
