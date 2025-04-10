@@ -1,0 +1,218 @@
+
+    :root {
+        --primary-color: #4a6baf;
+        --secondary-color: #3c4f76;
+        --accent-color: #5cb85c;
+        --light-bg: #f8f9fa;
+        --dark-bg: #343a40;
+        --text-color: #333;
+        --light-text: #f8f9fa;
+    }
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--light-bg);
+    }
+    
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    header {
+        background-color: var(--primary-color);
+        color: var(--light-text);
+        padding: 20px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    
+    header p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+    }
+    
+    nav {
+        background-color: var(--secondary-color);
+        padding: 10px 0;
+    }
+    
+    nav ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    nav ul li a {
+        color: var(--light-text);
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+        color: var(--accent-color);
+    }
+    
+    .intro {
+        padding: 40px 0;
+        text-align: center;
+    }
+    
+    .intro h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: var(--secondary-color);
+    }
+    
+    .intro p {
+        font-size: 1.1rem;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .metrics-section {
+        padding: 40px 0;
+    }
+    
+    .metrics-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+        color: var(--secondary-color);
+        text-align: center;
+    }
+    
+    .chart-container {
+        margin-bottom: 50px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    
+    .chart-container iframe {
+        width: 100%;
+        height: 600px;
+        border: none;
+    }
+    
+    .tabs {
+        display: flex;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .tab-button {
+        padding: 10px 20px;
+        background-color: #f1f1f1;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+    
+    .tab-button:hover {
+        background-color: #ddd;
+    }
+    
+    .tab-button.active {
+        background-color: var(--primary-color);
+        color: white;
+    }
+    
+    .tab-content {
+        display: none;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-top: none;
+    }
+    
+    .tab-content.active {
+        display: block;
+    }
+    
+    .model-card {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .model-card h3 {
+        color: var(--primary-color);
+        margin-bottom: 10px;
+    }
+    
+    .model-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+        margin-top: 15px;
+    }
+    
+    .stat-item {
+        background-color: var(--light-bg);
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    .stat-item .label {
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    
+    .stat-item .value {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+    
+    footer {
+        background-color: var(--dark-bg);
+        color: var(--light-text);
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 50px;
+    }
+    
+    @media (max-width: 768px) {
+        .container {
+            width: 95%;
+        }
+        
+        header h1 {
+            font-size: 2rem;
+        }
+        
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        nav ul li {
+            margin: 5px 0;
+        }
+        
+        .model-stats {
+            grid-template-columns: 1fr;
+        }
+    }
+    
